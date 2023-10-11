@@ -1,4 +1,4 @@
-This is a Static website that I have built for a local bussiness in Bulgaria.
+I have developed a static website for a local business in Bulgaria. To create this website, I utilized a free template provided by HTML5UP and tailored it to align with the specific needs and preferences of the client. In addition to customizing the design and content, I integrated a contact form with enhanced functionality. This form now facilitates the submission of user data via POST requests to Formspree, allowing seamless forwarding of inquiries and messages to the client's designated email address.
 
-I have used free template and have modified it to be responsive and to meet the costumer's requirements.
+Furthermore, I successfully deployed the website to a custom domain, ensuring that it is easily accessible online. This comprehensive approach to web development has enabled our client to establish a professional and user-friendly online presence, connecting them with potential customers and enhancing their digital outreach.
 
