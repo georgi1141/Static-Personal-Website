@@ -2380,6 +2380,13 @@ input, select, textarea {
 
 		}
 
+		#footer{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0.5em auto !important;
+		}
+
 		@media screen and (max-width:992px){
 			.card-container{
 				justify-content: center;
