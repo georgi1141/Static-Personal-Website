@@ -2305,6 +2305,8 @@ input, select, textarea {
 			}
 
 		}
+
+		/* own styling*/
 		.content>footer>a{
 			margin:3em;
 		}
@@ -2353,6 +2355,8 @@ input, select, textarea {
 			min-height: 15em;
 		}
 
+		
+
 		.ul-style{
 			font-size: 0.7em;
 			margin-left: 0.6em;
@@ -2366,7 +2370,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width:480px){
+		@media screen and (max-width:992px){
 			.card-container{
 				justify-content: center;
 				align-items: center;
@@ -2380,6 +2384,8 @@ input, select, textarea {
 			
 			
 		}
+
+		
 
 		
 	
