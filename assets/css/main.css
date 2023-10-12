@@ -2344,6 +2344,9 @@ input, select, textarea {
 		.card{
 			margin-bottom: 1em;
 		}
+		.card-body{
+			box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.3);
+		}
 
 		.card-container{
 			display: flex;
@@ -2367,6 +2370,8 @@ input, select, textarea {
 		.ul-style>li{
 			line-height: 1.2em;
 			margin-bottom: 0.4em;
+			
+
 
 		}
 
