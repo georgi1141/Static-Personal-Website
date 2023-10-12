@@ -6,7 +6,13 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
 @import url('fontawesome-all.min.css');
 
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
+// Breakpoints.
 
 	@include breakpoints((
 		xxlarge: ( 1681px,  1920px ),
@@ -17,13 +23,13 @@
 		xsmall:  ( null,    480px  )
 	));
 
-
+// Base.
 
 	@import 'base/reset';
 	@import 'base/page';
 	@import 'base/typography';
 
-
+// Component.
 
 	@import 'components/box';
 	@import 'components/button';
@@ -38,13 +44,13 @@
 	@import 'components/poptrox-popup';
 	@import 'components/gallery';
 
-
+// Layout.
 
 	@import 'layout/header';
 	@import 'layout/main';
 	@import 'layout/footer';
 
-
+/* Intro */
 
 	#intro {
 		background: url('images/overlay.png'), url('../../images/intro.jpg');
@@ -54,7 +60,7 @@
 		background-repeat: repeat, no-repeat;
 	}
 
-
+/* One */
 
 	#one {
 		background: url('images/overlay.png'), url('../../images/one.jpg');
@@ -63,7 +69,7 @@
 		background-position: top left, center center;
 	}
 
-
+/* Two */
 
 	#two {
 		background: url('images/overlay.png'), url('../../images/two.jpg');
@@ -72,7 +78,7 @@
 		background-position: top left, center center;
 	}
 
-
+/* Contact */
 
 	#contact {
 		overflow: hidden;

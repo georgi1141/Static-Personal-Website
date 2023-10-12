@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2343,10 +2348,25 @@ input, select, textarea {
 			
 		}
 		.card{
+			display: flex;
+			flex-wrap: wrap;
 			margin-bottom: 1em;
 		}
 		.card-body{
+			border-radius: 0.3em;
 			box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4);
+		}
+		.card-title{
+			margin-top: 1em;
+		}
+		.card-body>h5,.card-body>h6{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.card-body>h6{
+			margin: auto 1em;
+			color: #6d7075;
 		}
 
 		.card-container{
@@ -2359,15 +2379,13 @@ input, select, textarea {
 			display: flex;
 		}
 		
-		.card-container>article>.card{
-			min-height: 15em;
-		}
+		
 
 		
 
 		.ul-style{
 			font-size: 0.7em;
-			margin-left: 0.6em;
+			margin: 0 2em;
 			list-style-type:disc;
 
 		}

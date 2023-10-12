@@ -1,4 +1,10 @@
+///
+/// Big Picture by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
 
+/* Basic */
 
 	@-ms-viewport {
 		width: device-width;
@@ -8,6 +14,8 @@
 		height: 100%;
 	}
 
+	// Set box model to border-box.
+	// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
 		html {
 			box-sizing: border-box;
 		}
@@ -21,7 +29,7 @@
 		height: 100%;
 		min-width: 320px;
 
-		
+		// Stops initial animations until page loads.
 			&.is-preload {
 				*, *:before, *:after {
 					@include vendor('animation', 'none !important');
@@ -31,14 +39,14 @@
 
 	}
 
-
+/* Spinner */
 
 	@include keyframes('spinner-rotate') {
 		0% { @include vendor('transform', 'scale(1) rotate(0deg)'); }
 		100% { @include vendor('transform', 'scale(1) rotate(360deg)'); }
 	}
 
-
+/* Loader */
 
 	@include keyframes('spinner-show') {
 		0% { opacity: 0; }

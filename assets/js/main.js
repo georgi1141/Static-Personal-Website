@@ -1,4 +1,8 @@
-
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 (function($) {
 
@@ -7,6 +11,7 @@
 		$header = $('#header'),
 		$all = $body.add($header);
 
+	// Breakpoints.
 		breakpoints({
 			xxlarge: [ '1681px',  '1920px' ],
 			xlarge:  [ '1281px',  '1680px' ],
@@ -16,12 +21,14 @@
 			xsmall:  [ null,      '480px'  ]
 		});
 
+	// Play initial animations on page load.
 		$window.on('load', function() {
 			setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
 		});
 
+	// Touch mode.
 		if (browser.mobile)
 			$body.addClass('is-touch');
 		else {
@@ -36,6 +43,7 @@
 
 		}
 
+	// Fix: IE flexbox fix.
 		if (browser.name == 'ie') {
 
 			var $main = $('.main.fullscreen'),
@@ -68,6 +76,7 @@
 
 		}
 
+	// Gallery.
 		$window.on('load', function() {
 
 			var $gallery = $('.gallery');
@@ -85,6 +94,7 @@
 				usePopupNav: true
 			});
 
+			// Hack: Adjust margins when 'small' activates.
 				breakpoints.on('>small', function() {
 					$gallery.each(function() {
 						$(this)[0]._poptrox.windowMargin = 50;
@@ -99,11 +109,12 @@
 
 		});
 
+	// Section transitions.
 		if (browser.canUse('transition')) {
 
 			var on = function() {
 
-				//
+				// Galleries.
 					$('.gallery')
 						.scrollex({
 							top:		'30vh',
@@ -115,7 +126,7 @@
 							leave:		function() { $(this).addClass('inactive'); }
 						});
 
-				
+				// Generic sections.
 					$('.main.style1')
 						.scrollex({
 							mode:		'middle',
@@ -136,7 +147,7 @@
 							leave:		function() { $(this).addClass('inactive'); }
 						});
 
-				
+				// Contact.
 					$('#contact')
 						.scrollex({
 							top:		'50%',
@@ -151,18 +162,18 @@
 
 			var off = function() {
 
-				
+				// Galleries.
 					$('.gallery')
 						.unscrollex();
 
-				
+				// Generic sections.
 					$('.main.style1')
 						.unscrollex();
 
 					$('.main.style2')
 						.unscrollex();
 
-				
+				// Contact.
 					$('#contact')
 						.unscrollex();
 
@@ -173,26 +184,26 @@
 
 		}
 
-	
+	// Events.
 		var resizeTimeout, resizeScrollTimeout;
 
 		$window
 			.on('resize', function() {
 
-				
+				// Disable animations/transitions.
 					$body.addClass('is-resizing');
 
 				clearTimeout(resizeTimeout);
 
 				resizeTimeout = setTimeout(function() {
 
-					
+					// Update scrolly links.
 						$('a[href^="#"]').scrolly({
 							speed: 1500,
 							offset: $header.outerHeight() - 1
 						});
 
-					
+					// Re-enable animations/transitions.
 						setTimeout(function() {
 							$body.removeClass('is-resizing');
 							$window.trigger('scroll');
