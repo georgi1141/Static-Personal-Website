@@ -2354,7 +2354,7 @@ input, select, textarea {
 		}
 		.card-body{
 			border-radius: 0.3em;
-			box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4);
+			box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4),0 0 1em 0 rgba(0, 0, 0, 0.2) inset;
 		}
 		.card-title{
 			margin-top: 1em;
