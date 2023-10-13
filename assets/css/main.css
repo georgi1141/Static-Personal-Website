@@ -2363,6 +2363,8 @@ input, select, textarea {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			text-align: center;
+			flex-wrap: wrap;
 		}
 		.card-body>h6{
 			margin: auto 1em;
