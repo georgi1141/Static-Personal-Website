@@ -2312,6 +2312,8 @@ input, select, textarea {
 		}
 
 		/* own styling*/
+
+	
 	
 		.content>footer>a{
 			margin:3em;
@@ -2322,13 +2324,28 @@ input, select, textarea {
 		}
 		
 
+		.main .author:before{
+			content: "— ";
+
+		}
+
 		.main .author{
 			position: absolute;
 			margin-bottom:10em;
 			margin-left: 2em;
 			margin-bottom: 2em;
+		
 			
 		}
+
+		.quote:before{
+			content:'“';
+		}
+		.quote:after{
+			content:'”';
+		}
+		
+		
 		.content>p{
 			font-size: 1.2em;
 			line-height: 1.2em;
